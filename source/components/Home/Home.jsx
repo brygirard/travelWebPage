@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button } from 'semantic-ui-react'
+import { Button, Input } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
@@ -11,7 +11,7 @@ class Home extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			search: '', //where we will get input movie
+			value: '', //where we will get input movie
 			movies: {}
 		};
 		this.basesearchurl = "https://api.themoviedb.org/3/search/multi?api_key=c0522a712dcd61c2c833d1ecb940e06c&query=";
@@ -20,6 +20,7 @@ class Home extends Component {
 	}
 
 	inputChangeHandler(){
+
 
 	}
 
@@ -43,6 +44,11 @@ class Home extends Component {
         return(
             <div className="Home">
                 <h1>Movie Search</h1>
+                 <Input
+                   placeholder="Type here to search..."
+                   value={this.state.value}
+                   onChangeText={(value) => this.setState({value})}
+                 />
                 <Button onClick = {this.clickHandler}>
                    SEARCH
                 </Button>
