@@ -14,20 +14,14 @@ import Details from './components/Details/Details.jsx';
 require('./styles/main.scss');
 
 
-function requireAuth(nextState, replaceState) {
-    replaceState({ nextPathname: nextState.location.pathname}, '/Details')
-}
-
-
-
 
 
 render(
    <Router>
       <div>
-      <Route exact path="/" component={Home}/>
-      <Route path="/Search" component={Search}/>
-      <Route path="/Details" component={Details}/>
+       <Route path="/" component={Search}/>
+       <Route exact path="/Home" component={Home}/>
+       <Route path="/Details" component={Details}/>
      </div>
    </Router>,
     // Define your router and replace <Home /> with it!\
