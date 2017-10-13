@@ -13,15 +13,18 @@ import Details from './components/Details/Details.jsx';
 // They should be 'require'd in their component class file.
 require('./styles/main.scss');
 
+
+function requireAuth(nextState, replaceState) {
+    replaceState({ nextPathname: nextState.location.pathname}, '/Details')
+}
+
+
+
+
+
 render(
    <Router>
       <div>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/Search">Search</Link></li>
-          <li><Link to="/Details">Details</Link></li>
-        </ul>
-
       <Route exact path="/" component={Home}/>
       <Route path="/Search" component={Search}/>
       <Route path="/Details" component={Details}/>
