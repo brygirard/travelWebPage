@@ -5,8 +5,8 @@ import 'semantic-ui-css/semantic.min.css';
 
 // Include your new Components here
 import Home from './components/Home/Home.jsx';
-import Search from './components/Search/Search.jsx';
-import Details from './components/Details/Details.jsx';
+//import Search from './components/Search/Search.jsx';
+//import Details from './components/Details/Details.jsx';
 
 // Include any new stylesheets here
 // Note that components' stylesheets should NOT be included here.
@@ -19,11 +19,11 @@ require('./styles/main.scss');
 render(
    <Router>
       <div>
-       <Route path="/" component={Search}/>
-       <Route exact path="/Home" component={Home}/>
-       <Route path="/Details" component={Details}/>
+       <Route path="/" component={Home}/>
      </div>
    </Router>,
     // Define your router and replace <Home /> with it!\
+    //<Route exact path="/Home" component={Home}/>
+    //<Route path="/Details" component={Details}/>
     document.getElementById('app')
 );
