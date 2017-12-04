@@ -4,9 +4,10 @@ import './index.css';
 
 import Header from './components/Header/Header';
 import ProfilePage from './components/ProfilePage/ProfilePage';
-import PlayerPage from './components/PlayerPage/PlayerPage';
+import RecPage from './components/RecPage/RecPage';
 import BrowsePage from './components/BrowsePage/BrowsePage';
 import LoginPage from './components/LoginPage/LoginPage';
+import CreatePage from './components/CreatePage/CreatePage';
 
 
 import {BrowserRouter as Router, Route} from 'react-router-dom'
@@ -19,8 +20,9 @@ const App = () => {
             <Header/>
             <Route exact path="/" component={ProfilePage}></Route>
             <Route path="/browse" component={BrowsePage}></Route>
-            <Route path="/player" component={PlayerPage}></Route>
-            <Route path="/Login" component={LoginPage}></Route>
+            <Route path="/rec" component={RecPage}></Route>
+            <Route path="/login" component={LoginPage}></Route>
+            <Route path="/create" component={CreatePage}></Route>
         </div>
     </Router>
     )

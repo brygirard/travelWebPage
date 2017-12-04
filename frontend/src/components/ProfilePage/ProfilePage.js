@@ -13,17 +13,12 @@ const GridLayout = () => (
     <Grid.Column width={11} >
         <Grid columns={1} textAlign='center' verticalAlign='middle'  >
             <Grid.Row>
-                    <Header size='huge'>Genres</Header>
-
-            </Grid.Row>
-            <Grid.Row>
-                <Button color="yellow">Instrumental</Button>
-                <Button color="red">Rock</Button>
-                <Button color="green">EDM</Button>
-                <Button color="blue">Classical</Button>
+                <Button color="yellow">Price</Button>
+                <Button color="red">Date Creation</Button>
+                <Button color="green">Distance</Button>
             </Grid.Row>
              <Grid.Row>
-                    <Header size='huge'>Your songs</Header>
+                    <Header size='huge'>Your Destinations</Header>
             </Grid.Row>
              <Grid.Row  >
                  <ThreadList/>
@@ -41,42 +36,42 @@ const ThreadList = () => (
   <List divided verticalAlign='middle' size='huge' style={{height:"450px"}} >
     
     <List.Item>
-      <Image avatar src='http://www.unpopularlyrics.com/wp-content/uploads/2014/05/phoria-display.jpg' />
+      <Image avatar src='https://media-cdn.tripadvisor.com/media/photo-s/09/58/8c/3f/playa-lancheros.jpg' />
       <List.Content>
-        <List.Header as='a'>Phoria: Undone</List.Header>
+        <List.Header as='a'>Cancun, Mexio</List.Header>
       </List.Content>
         
       <List.Content floated='right' style={{paddingTop:'0.25em'}}>
             <Label >
-                <Icon name='arrow up' /> 45
+                <Icon name='trash' />
             </Label>
       </List.Content>
         
     </List.Item>
     
     <List.Item>
-      <Image avatar src='https://upload.wikimedia.org/wikipedia/en/9/9b/Muse_-_Madness.jpg' />
+      <Image avatar src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Chicago_skyline%2C_viewed_from_John_Hancock_Center.jpg/500px-Chicago_skyline%2C_viewed_from_John_Hancock_Center.jpg' />
       <List.Content>
-        <List.Header as='a'>Muse: Madness</List.Header>
+        <List.Header as='a'>Chicago, Illinois</List.Header>
       </List.Content>
         
       <List.Content floated='right' style={{paddingTop:'0.25em'}}>
             <Label >
-                <Icon name='arrow up' /> 34
+                <Icon name='trash' />
             </Label>
       </List.Content>
         
     </List.Item>
         
     <List.Item>
-      <Image avatar src='https://images.genius.com/84f22a1198c3f2bc7ee2d783a9960b9d.500x500x1.jpg' />
+      <Image avatar src='http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/France/Paris/paris-attractions-xlarge.jpg' />
       <List.Content>
-        <List.Header as='a'>Twenty One Pilots: Heathens</List.Header>
+        <List.Header as='a'>Paris, Frace</List.Header>
       </List.Content>
         
       <List.Content floated='right' style={{paddingTop:'0.25em'}}>
             <Label >
-                <Icon name='arrow up' /> 33
+                <Icon name='trash' />
             </Label>
       </List.Content>
     </List.Item>

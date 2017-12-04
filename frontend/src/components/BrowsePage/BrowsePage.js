@@ -7,12 +7,12 @@ import './BrowsePage.css';
 
 const Filter = () => (
 
-    <Dropdown text='Filter by Genre' icon='filter' floating labeled button className='icon'>
+    <Dropdown text='Sort Destinations' icon='filter' floating labeled button className='icon'>
     <Dropdown.Menu>
-      <Dropdown.Header icon='tags' content='Filter by Genre' />
-      <Dropdown.Item>Rock</Dropdown.Item>
-      <Dropdown.Item>Rap</Dropdown.Item>
-      <Dropdown.Item>R&B</Dropdown.Item>
+      <Dropdown.Header icon='tags' content='Sort Destinations' />
+      <Dropdown.Item>Cost</Dropdown.Item>
+      <Dropdown.Item>Distance</Dropdown.Item>
+      <Dropdown.Item>Name</Dropdown.Item>
     </Dropdown.Menu>
   </Dropdown>
 )

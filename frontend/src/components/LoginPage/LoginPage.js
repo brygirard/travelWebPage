@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-  import { Button, Checkbox, Form } from 'semantic-ui-react'
+import { Button, Form } from 'semantic-ui-react'
 import './LoginPage.css';
 
 const LoginForm = () => (
@@ -13,14 +13,13 @@ const LoginForm = () => (
         <label>Password</label>
         <input placeholder='Password' />
       </Form.Field>
-      <Form.Field>
-        <Checkbox label='I agree to the Terms and Conditions' />
-      </Form.Field>
-      <Button type='submit' href="/">Submit</Button>
+       <Button type='submit' href="/">Log In</Button>
       <p className="register">Need an account? Register</p>
     </Form>
   </div>
 )
+
+
 
 class LoginPage extends Component {
   render() {

@@ -6,7 +6,7 @@ import './Header.css';
 
 const Logo = () => (
     <div>
-        Colloborative Playlist
+         Desination Planner
     </div>
 )
 
@@ -23,15 +23,10 @@ class Header extends Component {
         <Menu.Item header><Logo/></Menu.Item>
         <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} href="/" />
         <Menu.Item name='browse' active={activeItem === 'browse'} onClick={this.handleItemClick} href="/browse"/>
-        <Menu.Item name='player' active={activeItem === 'player'} onClick={this.handleItemClick} href="/player" />
+        <Menu.Item name='recommended' active={activeItem === 'rec'} onClick={this.handleItemClick} href="/rec" />
         <Menu.Menu position='right'>
-            <div className='ui right aligned category search item'>
-                <div className='ui transparent icon input'>
-                    <input className='prompt' type='text' placeholder='Enter Room Code...'/>
-                    <i className='search link icon' />
-                 </div>
-                <div className='results' />
-            </div>
+            <Menu.Item name='login' active={activeItem === 'login'} onClick={this.handleItemClick} href="/login" />
+            <Menu.Item name='create' active={activeItem === 'create'} onClick={this.handleItemClick} href="/create" />
         </Menu.Menu>
       </Menu>
     )
